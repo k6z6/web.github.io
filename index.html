@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Mycard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,700&family=Young+Serif&display=swap" rel="stylesheet">
+  <style>
+  #ultimo + div{
+      visibility:hidden;
+  }
+  
+    /* Ajustar la altura del carrusel para ocupar toda la pantalla */
+    .carousel {
+      position: relative;
+      display: flex;
+      margin: auto;
+     width: 400px;
+     height: 800px;
+
+    }
+    /* Estilo adicional si es necesario */
+    .carousel-item {
+      width: 400px;
+      height: 800px;
+      text-align: center;
+      background-size: cover;
+      position: relative;
+      
+    }
+    .d-block{
+      width: 100vh;
+      height: 100vh;
+      }
+    /* Estilo para el precio */
+    .precio {
+      color: rgb(255, 255, 255);
+      font-size: 1.5rem;
+      text-align: center;
+      z-index: 1;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    
+      font-family: 'Young Serif', serif;
+    }
+    @media (max-width: 420px) {
+      .precio {
+        font-size: 1.2rem;
+      }
+     .d-block{
+      height: 800px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="carouselExample" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetaamarillo1.png" class="d-block w-100" alt="Tarjeta Amarilla">
+    </div>
+    <div class="carousel-item">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetarosa1.png" class="d-block w-100" alt="Tarjeta Morada">
+    </div>
+    <div class="carousel-item">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetanegras1.png" class="d-block w-100" alt="Tarjeta Negra">
+    </div>
+    <div class="carousel-item">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetaroja1.png" class="d-block w-100" alt="Tarjeta Roja">
+    </div>
+    <div class="carousel-item">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetaazul1.png" class="d-block w-100" alt="Tarjeta Azul">
+    </div>
+
+    <div class="carousel-item active">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetamarilla.png" class="d-block w-100" alt="Tarjeta Amarilla">
+    </div>
+    <div class="carousel-item">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetamorada.png" class="d-block w-100" alt="Tarjeta Morada">
+    </div>
+    <div class="carousel-item">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetanegra.png" class="d-block w-100" alt="Tarjeta Negra">
+    </div>
+    <div class="carousel-item">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetaroja.png" class="d-block w-100" alt="Tarjeta Roja">
+    </div>
+    <div class="carousel-item">
+      <h1 class="precio">Precio: $80,000</h1>
+      <img src="img/tarjetazul.png" class="d-block w-100" alt="Tarjeta Azul">
+    </div>
+    <!-- Agrega más elementos carousel-item según sea necesario -->
+  </div>
+  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<div id="ultimo"></div>
+</body>
+</html>
