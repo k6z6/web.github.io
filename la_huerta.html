@@ -4,23 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Agente Inmobiliaria</title>
+  <title>La Huerta</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,700&family=Young+Serif&display=swap" rel="stylesheet">
   <style>
-  #ultimo + div{
+    #ultimo + div{
       visibility:hidden;
-  }
-  
+    }
     /* Ajustar la altura del carrusel para ocupar toda la pantalla */
     .carousel {
       position: relative;
       display: flex;
       margin: auto;
-     width: 400px;
-     height: 800px;
-
+      width: 400px;
+      height: 800px;
     }
     /* Estilo adicional si es necesario */
     .carousel-item {
@@ -29,19 +27,18 @@
       text-align: center;
       background-size: cover;
       position: relative;
-      
     }
     .carousel-control-next-icon, .carousel-control-prev-icon {
-    display: inline-block;
-    width: 40px;
-    height: 60px;
-    background-color: black;
-    background-size: 100% 100%;
+      display: inline-block;
+      width: 40px;
+      height: 60px;
+      background-color: black;
+      background-size: 100% 100%;
     }
-    .d-block{
-      width: 100vh;
-      height: 100vh;
-      }
+    .d-block {
+      width: 100%;
+      height: 100%;
+    }
     /* Estilo para el precio */
     .precio {
       color: rgb(255, 255, 255);
@@ -52,25 +49,24 @@
       top: 10%;
       left: 50%;
       transform: translate(-50%, -50%);
-    
       font-family: 'Young Serif', serif;
     }
     @media (max-width: 420px) {
       .precio {
         font-size: 1.2rem;
       }
-     .d-block{
-      height: 800px;
+      .d-block {
+        height: 800px;
       }
     }
   </style>
 </head>
 <body>
 
-<div id="carouselExample" class="carousel slide" data-ride="carousel">
+<div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="5000">
   <div class="carousel-inner">
 
-    <div class="carousel-item active">
+    <div class="carousel-item">
       <video class="d-block w-100" controls>
         <source src="img/mh2.mp4" type="video/mp4">
         Tu navegador no soporta el elemento de video.
@@ -81,18 +77,27 @@
       <img src="img/mh3.jpeg" class="d-block w-100" alt="img1">
     </div>
 
-    <div class="carousel-item ">
+    <div class="carousel-item">
       <img src="img/mh4.jpeg" class="d-block w-100" alt="img2">
     </div>
-    <div class="carousel-item ">
+    <div class="carousel-item">
       <img src="img/mh5.jpeg" class="d-block w-100" alt="img3">
     </div>
-    <div class="carousel-item ">
+    <div class="carousel-item">
       <img src="img/mh6.png" class="d-block w-100" alt="img4">
     </div>
-    
-  
-
+    <div class="carousel-item">
+      <video class="d-block w-100" controls>
+        <source src="img/mh2.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video class="d-block w-100" controls>
+        <source src="img/mh1.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
 
     <!-- Agrega más elementos carousel-item según sea necesario -->
   </div>
